@@ -4,10 +4,10 @@ Welcome to my journey of learning Data Structures and Algorithms (DSA). This rep
 
 ## Directories
 1. Algorithms
-   [Searching] (https://github.com/Shaheer-Shaggy/DSA/tree/main/Algorithm/Searching) ,
-   [Sorting] (https://github.com/Shaheer-Shaggy/DSA/tree/main/Algorithm/Sorting)
+   .)[Searching](https://github.com/Shaheer-Shaggy/DSA/tree/main/Algorithm/Searching) ,
+   .)[Sorting](https://github.com/Shaheer-Shaggy/DSA/tree/main/Algorithm/Sorting)
 
-2. Data Structures
+3. Data Structures
    [Linked_Lists] (https://github.com/Shaheer-Shaggy/DSA/tree/main/Link%20list)
 
 
