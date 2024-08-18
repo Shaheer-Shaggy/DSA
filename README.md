@@ -3,12 +3,12 @@
 Welcome to my journey of learning Data Structures and Algorithms (DSA). This repository contains various algorithms and data structures implemented in C++.
 
 ## Directories
-1. Algorithms
-   [Searching] ()
-   [Sorting] ()
+1. Algorithms:
+   [Searching](https://github.com/Shaheer-Shaggy/DSA/tree/main/Algorithm/Searching) ,
+   [Sorting](https://github.com/Shaheer-Shaggy/DSA/tree/main/Algorithm/Sorting)
 
-2. Data Structures
-   [Linked_Lists] ()
+3. Data Structures
+   [Linked_Lists](https://github.com/Shaheer-Shaggy/DSA/tree/main/Link%20list)
 
 
 ## Usage 
@@ -45,6 +45,6 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 Helpful materials and guides:
 
-1. [w3School]()
-2. [GeekForGeeks]()
+1. [w3School](https://www.w3schools.com/dsa/index.php)
+2. [GeekForGeeks](https://www.geeksforgeeks.org/complete-guide-to-arrays-data-structure/?ref=outind)
 
