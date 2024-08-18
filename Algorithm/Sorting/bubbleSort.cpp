@@ -36,19 +36,19 @@ void bubblesort(int arr[], int size)
     }
 }
 
-int main() 
-{
-    int array[7] = {5,6,8,5,3,9,1};
+// int main() 
+// {
+//     int array[7] = {5,6,8,5,3,9,1};
 
 
-    int size = sizeof(array)/sizeof(array[0]);
-    bubbleSort(array, size);
+//     int size = sizeof(array)/sizeof(array[0]);
+//     bubbleSort(array, size);
 
-    for (int i = 0; i < size; i++)
-    {
-        cout << array[i] << " " << endl;
-    }
+//     for (int i = 0; i < size; i++)
+//     {
+//         cout << array[i] << " " << endl;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
