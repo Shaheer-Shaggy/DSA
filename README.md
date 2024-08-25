@@ -1,4 +1,4 @@
-# DSA Learning By Shaggy 
+# DSA Learning By Shaggy & Mef
  
 Welcome to my journey of learning Data Structures and Algorithms (DSA). This repository contains various algorithms and data structures implemented in C++.
 
