@@ -107,15 +107,14 @@ Node* removeLastNode(Node* head)
     }
     delete current->next;
     current->next = nullptr;
+
+    return head;
 }
 
 int main()
 {
 
     Node* head = new Node(1);
-
-
-    
     Node* second = new Node(2);
     Node* third = new Node(3);
 
@@ -135,15 +134,15 @@ int main()
 
   //  PrintList(head); // prints 1 2 3 4
 
-    head = removeFirstNode(head); // removing first node 
-    cout << endl;
+    // head = removeFirstNode(head); // removing first node 
+    // cout << endl;
 
-    PrintList(head); // prints 2 3 4
-    cout << endl;
+    // PrintList(head); // prints 2 3 4
+    // cout << endl;
 
-    head = removeLastNode(head); // removing last node
+    // head = removeLastNode(head); // removing last node
 
-    PrintList(head); // prints
+    // PrintList(head); // prints
 
 
     return 0;

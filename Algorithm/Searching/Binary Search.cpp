@@ -30,7 +30,13 @@ int main()
     int arr[] = {4 , 6, 2 , 8, 34, 65, 23, 87, 91 , 32 ,23  , 33 , 69, 62};
     int size  = sizeof(arr)/sizeof(arr[0]);
     bubbleSort(arr , size);
-    int result = binarySearch(arr, 0, size -1,  69);
+
+    // for (int i = 0; i < size; i++)
+    //         {
+    //             cout << arr[i] << " " << endl;
+    //         }
+
+        int result = binarySearch(arr, 0, size - 1, 69);
     if (result == -1)
         cout << "Element is not present in array";
     else

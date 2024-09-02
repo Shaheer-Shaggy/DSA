@@ -9,7 +9,8 @@ void bubbleSort(int arr[], int size)
     for(int i =0 ; i < size-1 ; i++){    // here size -1  // we used size -1 cuz the last element is always the largest after the sort on [size-1] element of an array 
         for(int j = 0 ; j < size-i-1 ; j++){   // size - i -1 to reduce time complexity
             if(arr[j] > arr[j+1]){
-                temp = arr[j];
+                
+                temp = arr[j];  // swapping 
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
 

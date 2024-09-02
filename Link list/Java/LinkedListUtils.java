@@ -9,7 +9,7 @@ public class LinkedListUtils {
         public Node(int data) {
             this.data = data;
             this.next = null;
-        }
+        }  
 
         // Add new address to new node
         public void addNext(Node node) {
