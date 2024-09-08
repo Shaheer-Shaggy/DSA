@@ -7,6 +7,8 @@ class Node {
 public:
   int data;
   Node* next;
+
+
   Node(int data) 
   {
     this->data = data;
@@ -14,9 +16,4 @@ public:
   }
 };
 
-int main()
-{
-    int arr[] = {10, 20, 30, 40, 50};
-    int n = sizeof(arr) / sizeof(arr[0]);
-}
 

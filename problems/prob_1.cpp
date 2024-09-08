@@ -1,28 +1,24 @@
 #include <iostream>
 #include "../Stack/main.cpp"
 
-
 using namespace std;
 
-void BubbleSort(int arr[] , int size)
+void BubbleSort(int arr[], int size)
 {
-    
-    for(int i = 0 ; i < size-1 ; i++)
-    {   
-        for(int j = 0 ; j < size ; j++)
+
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = 0; j < size; j++)
         {
-              
-            if(arr[j] > arr[j+1])
+
+            if (arr[j] > arr[j + 1])
             {
                 int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-                
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
-            
         }
     }
-
 }
 
 void SortStack(Stack &stack)
@@ -33,28 +29,79 @@ void SortStack(Stack &stack)
 
     // Pop elements from the stack and store them in the array
     for (int i = stack.getTop(); i >= 0; i--)
-    {    arr[i] = stack.pop();
-         cout << arr[i] << "testing " <<endl;
+    {
+        arr[i] = stack.pop();
+        cout << arr[i] << "testing " << endl;
     }
-   
 
     // Sort the array (you can use any sorting algorithm)
-   cout << "size  :" << size << endl;
-   BubbleSort(arr, size);
+    cout << "size  :" << size << endl;
+    BubbleSort(arr, size);
 
-  
-  
-   // Push sorted elements back to the stack
-   for (int i = 0; i <= size; i++)
-    {   stack.push(arr[i]);
-    cout << "Final " <<endl;
-    cout << arr[i] << endl;
+    // Push sorted elements back to the stack
+    for (int i = 0; i <= size; i++)
+    {
+        stack.push(arr[i]);
+        cout << "Final " << endl;
+        cout << arr[i] << endl;
     }
 
-   // Clean up: release the dynamically allocated memory
-   delete[] arr;
+    // Clean up: release the dynamically allocated memory
+    delete[] arr;
 }
 
+
+void print(int arr[], int size)
+{
+    for(int i = 0 ; i < size ; i++)
+    {
+        cout << arr[i] << " " ;
+    }
+    cout << endl;
+}
+void bubbleSort(int arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+    { for (int j = 0; j < size-1; j++)
+        {
+            if(arr[j] > arr[j+1])
+            {
+                int temp = arr[j];
+                arr[j] = arr[j+1] ;
+                arr[j+1] = temp ;
+                
+            }
+            
+        }
+        cout << arr[i] << " " << endl;
+    }
+}
+
+void StackSort(Stack &stack)
+{
+    int size = stack.getTop()+1 ;
+    cout << size << " " <<endl;
+    int *arr = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = stack.pop();
+    }
+
+    print(arr , size);
+    cout << size  << " Testing " << endl;
+
+    bubbleSort(arr , size);
+
+    print(arr , size);
+
+    for(int i = 0 ; i <size ; i++)
+    {
+        stack.push(arr[i]);
+    }
+
+   
+}
 int main()
 {
     Stack stack1;
@@ -70,7 +117,7 @@ int main()
     stack1.display();
     cout << endl;
 
-    SortStack(stack1);
+    StackSort(stack1);
 
     // Print the sorted elements
     cout << "After sorting: ";

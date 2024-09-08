@@ -1,6 +1,7 @@
 #include <iostream>
 #define MAX 100
 
+
 using namespace std;
 
 class Stack
@@ -23,6 +24,7 @@ public:
            return true;
         return false ;
     }
+
     bool isFull()
     {
         if(top == MAX)
@@ -33,7 +35,7 @@ public:
     }
     void push(int num)
     {
-        if (top < MAX - 1) // Check if there's space in the stack
+        if (top < MAX ) // Check if there's space in the stack
         {
             top++;
             arr[top] = num;
