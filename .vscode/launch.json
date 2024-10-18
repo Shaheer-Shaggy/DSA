@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountSort",
+            "request": "launch",
+            "mainClass": "CountSort",
+            "projectName": "DSA_c13683a3"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Java.Main",

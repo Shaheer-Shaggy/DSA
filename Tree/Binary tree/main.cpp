@@ -5,7 +5,7 @@ using namespace std;
 class Tree {
     public :
 
-    int data ;
+    char data ;
     Tree* left ;
     Tree* right ;
 
@@ -40,27 +40,35 @@ void postOrder_traverse(Tree *root) // Post-order : Left, Right, Root
 {
     if(root == nullptr) return;
 
-    cout << root->data <<" " ;
     postOrder_traverse(root->left);
     postOrder_traverse(root->right);
+    cout << root->data << " ";
 }
 int main()
 {
 
     // Initilize and allocate memory for tree 
 
-    Tree *root = new Tree(1) ;
-    Tree *firstNode = new Tree(2);
-    Tree *secondNode = new Tree(3);
-    Tree *thirdNode = new Tree(4);
-    Tree *fourthNode = new Tree(5);
+    Tree *root = new Tree('a') ;
+    Tree *firstNode = new Tree('b');
+    Tree *secondNode = new Tree('c');
+    Tree *thirdNode = new Tree('d');
+    Tree *fourthNode = new Tree('e');
+    Tree *fifthNode = new Tree('f');
+    Tree *sixthNode = new Tree('g');
+    Tree *sevethNode = new Tree('h');
+    Tree *eightNode = new Tree('i');
 
 
     // Connecting nodes on binary tree
     root->left = firstNode ;
     root->right = secondNode ;
     firstNode->left = thirdNode ;
-    secondNode->right = fourthNode ;  //  for graphical representation see the BINARY_TREE.PNG file
+    firstNode->right = fourthNode;
+    fourthNode->left = fifthNode;
+    fourthNode->right =sixthNode;
+    secondNode->right = sevethNode;
+    sevethNode->left = eightNode; //  for graphical representation see the BINARY_TREE.PNG file
     
     cout << "Pre Order " ; 
     preOrder_traverse(root) ;

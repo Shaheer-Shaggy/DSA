@@ -72,25 +72,33 @@ class Queue
         }
         return this->rear->data;
     }
+
+    bool isEmpty()
+    {
+        return front == nullptr;
+    }
 };
 
-int main()
-{
+// int main()
+// {
 
-    Queue q;
+//     Queue q;
 
-    q.enqueue(1);
-    q.enqueue(2);
+//     q.enqueue(1);
+//     q.enqueue(2);
+//     q.enqueue(3);
+//     q.enqueue(5);
 
-    cout << "Front element is: " << q.getFront() << endl;
-    cout << "Rear element is: " << q.getRear() << endl;
+//     cout << "Front element is: " << q.getFront() << endl;
+//     cout << "Rear element is: " << q.getRear() << endl;
 
-    q.dequeue();
-    cout << "After dequeuing: " << endl;
-    cout << "Front element is: " << q.getFront() << endl;
-    cout << "Rear element is: " << q.getRear() << endl;
+//     q.dequeue();
+//     cout << "After dequeuing: " << endl;
+//     cout << "Front element is: " << q.getFront() << endl;
+//     cout << "Rear element is: " << q.getRear() << endl;
+//     q.dequeue();
 
 
     
-    return 0 ;
-}
+//     return 0 ;
+// }

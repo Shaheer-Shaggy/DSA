@@ -112,8 +112,6 @@ Node* insertionMiddle(Node *head, int data , int pos)
     newNode->next = temp->next;
     newNode->prev = temp;
     temp->next = newNode;
-
-
     newNode->next->prev = newNode;
 
     return head;

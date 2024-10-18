@@ -55,16 +55,27 @@ Node* addNodeLast(Node* head , int data)
 
 Node* MiddleInsertion(Node * head , int data , int pos )
 {
-    if(head->next == nullptr)
+    if (pos < 1)
     {
+        cout << "Invalid position!" << endl;
         return head;
+    }
+
+    // Special case for inserting at the head
+    if (pos == 1)
+    {
+        Node *temp = new Node(data);
+        temp->next = head;
+        return temp;
     }
 
     Node* temp = head ;
 
-    for(int i = 1; i <pos ; i++)
+    for(int i = 1; i <pos-1 ; i++)
     {
-        temp = temp->next ;
+        if(temp==nullptr)
+          break;
+          temp = temp->next ;
     }
 
     Node* newNode = new Node(data);

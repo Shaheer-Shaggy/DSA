@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 class Queue 
 { 
     public:
@@ -11,6 +10,7 @@ class Queue
     Stack<int> s1 , s2 ;
 
     void enqueue(int x)
+
     {
         while (!s1.isEmpty())
         {
