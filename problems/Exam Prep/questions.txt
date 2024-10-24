@@ -1,0 +1,48 @@
+Here's a challenging 10-question mock exam for your DSA lab, covering the topics you mentioned:
+
+Question 1: Time Complexity
+You are given an algorithm that consists of two nested loops, each iterating over different ranges of inputs. The outer loop runs from i = 1 to n in steps of 1, and the inner loop runs from j = 1 to i in steps of 1. Determine the time complexity of this algorithm and explain how you derived your result.
+
+Question 2: Linked List vs Arrays
+Describe a situation where using a linked list would be more efficient than using an array. Implement a function in C++ that takes an array of integers and converts it into a singly linked list. Discuss the time complexity of this operation.
+
+Question 3: Circular Linked List
+Write a C++ function to delete every third node in a circular linked list until only one node remains. Show how this can be efficiently implemented and describe the time complexity of your approach.
+
+Question 4: Doubly Linked List
+Implement a function in C++ that reverses a doubly linked list in place. You are not allowed to use extra space beyond what is necessary for the reversal process. Explain how the doubly linked nature of the list impacts your approach compared to reversing a singly linked list.
+
+Question 5: Queue using Linked List
+Implement a queue using a singly linked list, ensuring that both enqueue and dequeue operations take constant time, O(1). Additionally, explain why using a doubly linked list might or might not improve the efficiency of the queue operations.
+
+Question 6: Binary Search
+You are given a sorted array of integers, but the array has been rotated at some pivot. Write an algorithm to find a given target value in the rotated sorted array in O(log n) time. Explain the steps and thought process behind your solution.
+
+Question 7: Merge Sort
+Merge sort is known for its efficiency with large datasets. However, it's not an in-place algorithm. Can you modify merge sort so that it sorts in-place? If yes, write the C++ implementation; if no, explain why in-place merge sort is not possible and discuss the trade-offs of in-place sorting algorithms.
+
+Question 8: Count Sort
+Count sort works well for small ranges of values. Modify the Count Sort algorithm to handle negative integers, and describe how this affects its time complexity and space requirements.
+
+Question 9: Tree Traversals
+Given the following binary tree:
+
+mathematica
+Copy code
+        A
+       / \
+      B   C
+     / \   \
+    D   E   F
+           / \
+          G   H
+Perform the following traversals and write the resulting sequences:
+
+Preorder
+Inorder
+Postorder
+Level order
+Now, explain how the different traversal methods can impact algorithms that need to process nodes in a specific order.
+
+Question 10: Perfect Binary Tree
+A perfect binary tree has the property that all leaf nodes are at the same level and all non-leaf nodes have exactly two children. Write a function that takes the root of a binary tree as input and determines if it is a perfect binary tree. Explain your approach and analyze its time complexity.
