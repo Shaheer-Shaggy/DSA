@@ -44,10 +44,12 @@ void postOrder_traverse(Tree *root) // Post-order : Left, Right, Root
     postOrder_traverse(root->right);
     cout << root->data << " ";
 }
+
+
 int main()
 {
 
-    // Initilize and allocate memory for tree 
+    
 
     Tree *root = new Tree('a') ;
     Tree *firstNode = new Tree('b');
@@ -60,7 +62,7 @@ int main()
     Tree *eightNode = new Tree('i');
 
 
-    // Connecting nodes on binary tree
+    
     root->left = firstNode ;
     root->right = secondNode ;
     firstNode->left = thirdNode ;
@@ -68,17 +70,17 @@ int main()
     fourthNode->left = fifthNode;
     fourthNode->right =sixthNode;
     secondNode->right = sevethNode;
-    sevethNode->left = eightNode; //  for graphical representation see the BINARY_TREE.PNG file
+    sevethNode->left = eightNode; 
     
-    cout << "Pre Order " ; 
-    preOrder_traverse(root) ;
-    cout << endl;
+    // cout << "Pre Order " ; 
+    // preOrder_traverse(root) ;
+    // cout << endl;
     cout << "In Order ";
     inOrder_traverse(root) ;
     cout << endl;
-    cout << "Post Order ";
-    postOrder_traverse(root) ;
-    cout << endl;
+    // cout << "Post Order ";
+    // postOrder_traverse(root) ;
+    // cout << endl;
 
     return 0 ; 
 }
